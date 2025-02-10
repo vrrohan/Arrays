@@ -1,5 +1,10 @@
 /*
  * check if array is sorted or not either in ascending, increasing or non-decreasing order like (1,2,2,2,2,2,2)
+ * 
+ * Example - [1,2,3,4,5,6] ==> returns true
+ * Example - [-1,-1,-1,0,0,0] ==> returns true
+ * 
+ * Example - [-4,-3, 0, -2, 4, 1] ==> returns false
  */
 public class CheckIfArraySorted {
 
