@@ -1,5 +1,9 @@
 /*
  * Segregate array of 0's and 1's. Move all zeros to beginning of array and all ones to end of array.
+ * 
+ * Example - [1,0,1,1,1] ==> [0,1,1,1,1]
+ * 
+ * Example - [0,1,1,0,0,0] ==> [0,0,0,0,1,1]
  */
 public class SegregateArraysOfOnesAndZeros {
 
