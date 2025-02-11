@@ -41,11 +41,11 @@ public class TwoSum {
      * Also to track the index - we will store the value as index of element
      * 
      * Example - [1,2,4,6,9,13,8], sum=15, HashMap = []
-     * i=0, check if (sum - arr[i]) is present in hashmap ==> 15-1 = 14 not in
+     * i=0, check if (sum - arr[i]) is present in hashmap ==> 15-1=14 not in
      * hashmap ==> insert 1 & its index in hashmap
      * HashMap = [1:0]
      * 
-     * i=1, if (sum - arr[i]) is present in hashmap ==> 15-2 = 13 not in hashmap ==>
+     * i=1, if (sum - arr[i]) is present in hashmap ==> 15-2=13 not in hashmap ==>
      * insert 2 & its index in hashmap
      * HashMap = [1:0, 2:1]
      * 
@@ -53,7 +53,7 @@ public class TwoSum {
      * insert 4 & its index in hashmap
      * HashMap = [1:0, 2:1, 4:2]
      * 
-     * i=3, if (sum - arr[i]) is present in hashmap ==> 15-6=9 not in hashmao ==>
+     * i=3, if (sum - arr[i]) is present in hashmap ==> 15-6=9 not in hashmap ==>
      * insert 6 & its index in hashmap
      * HashMap = [1:0, 2:1, 4:2, 6:3]
      * 
@@ -61,8 +61,13 @@ public class TwoSum {
      * ==> no insertion. we get the pair
      * fetch the (sum - arr[i]) = 6 & its value (which is index of other pair
      * element)
-     * later remove the other element i.e. 6 from the hashmap
+     * later remove the other element i.e. 6 from the hashmap ==> HashMap = [1:0,
+     * 2:1, 4:2]
      * 
+     * i=5, (sum - arr[i]) is present in hashmap ==> 15-13=2 is present in hashmap
+     * ==> no insertion
+     * remove 2 from hashmap ==> other pair with sum=15 is (2,13). Now HashMap=[1:0,
+     * 4:2]
      * tc - O(n)
      * sc - O(n)
      */
