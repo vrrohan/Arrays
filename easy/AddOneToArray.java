@@ -22,7 +22,8 @@ public class AddOneToArray {
      * arr[0]=1 + carry (1) ==> 2 ==> sum<9 ==> carry=0 && sum = 2 i.e. arr[0] = 2
      * Hence result array = [2,0,0]
      * 
-     * tc - O(n)
+     * tc - O(n) for 1st iteration + O(n) to move from old to new array if required
+     * = O(2n)
      * sc - O(1)
      */
     static int[] addOneToArray(int[] arr) {
